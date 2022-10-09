@@ -1,0 +1,51 @@
+{
+    "stage": "pretrain",
+    "decay_boundarys": [], 
+    "trn_max_token": 800,
+    "num_epoch": 50,
+    "maximum_steps": 1000000,
+    "decay_schema": null, 
+    "subcfgs": {
+      "transformer": {
+        "lr_mult": 1.0,
+        "mem_fr":false,
+        "has_mvm":true,
+        "freeze": false, 
+        "decoding": "greedy", 
+        "has_sty":false,
+        "opt_alg": "Adam",
+        "mem_batch_loop_num":9,
+        "mlm_batch_loop_num":3,
+        "is_overlap_ft:":false,
+        "mem_loss_w":1,
+        "max_words_in_sent": 30,
+        "max_ft_len": 100, 
+        "vocab": 5751,
+        "e_model":100,
+        "d_model": 512,
+        "d_embed": 500,
+        "vis_layers": 1,
+        "txt_layers": 1,
+        "n_layers": 4,
+        "heads": 8,
+        "dropout": 0.1,
+        "d_mode":3
+      }
+    }, 
+    "monitor_iter": 100, 
+    "save_per_epoch": false,
+    "val_per_epoch": false,
+    "val_iter": 1000, 
+    "tst_batch_size": 100, 
+    "save_iter": 1000, 
+    "subcfg_types": {
+      "transformer": "TransformerConfig"
+    }, 
+    "base_lr": 1e-4, 
+    "decay_rate": 1, 
+    "summary_iter": 100, 
+    "submod_types": {
+      "transformer": "Transformer"
+    }
+}
+  

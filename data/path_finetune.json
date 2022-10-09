@@ -1,0 +1,26 @@
+{
+    "output_dir": "../results/anet/finetune",
+    "pretrain_task": ["eg"],
+    "eval_task": ["eg"],
+    "word2int_file": "../results/anet/word2int_anet.json",
+    "int2word_file": "../results/anet/int2word_anet.json",
+    "anno_file": ["xx/ref_caption.json"],
+    "sty_file":"",
+    "ft_root": {
+      "tst": {
+            "activitynet":["xx/c3d/"]},
+      "val": {
+            "activitynet":["xx/c3d/"]},
+      "trn": {
+            "activitynet":["xx/c3d/"]}
+    },
+    "name_file": {
+      "tst": [["activitynet", "xx/stamp_val_1.json.npy"]
+      ],
+      "val": [["activitynet", "xx/stamp_val_1.json.npy"],["activitynet", "xx/stamp_val_2.json.npy"]
+      ],
+      "trn": [["activitynet", "xx/stamp_train_modified.json.npy"]
+      ]
+    }
+  }
+  
